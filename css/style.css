@@ -1,0 +1,556 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/*attention : l'épaisseur de font 400=normal
+font-weight: 400;*/
+
+
+/* A REVOIR:  pour fixer le footer en bas*/
+html, body {
+	height: 100%;
+	margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* A REVOIR: pour fixer le footer en bas*/
+body {
+	display : table;
+	width: 100%;
+}
+/* A REVOIR: pour fixer le footer en bas*/
+footer {
+	display : table-row;
+	/*height: 100px;  à titre d'exemple */
+    bottom: 0;
+}
+
+/*
+.body-color{
+    background-color:;
+}
+*/
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    position:fixed; /* A REVOIR: pour fixer navbar en haut, proble relation body = deborde du container*/
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    /* left: 0;*/
+    background-color: white;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+/* ////////////////// start : my police ////////////////// */
+.navbar-txt-l{
+    padding: 0rem 1rem 0rem 0rem;
+    color: black;
+    font-size: 1.0em ;
+    font-weight: 400;
+}
+
+.navbar-txt-r{
+     /*float: right;*/
+    padding: 0rem 0rem 0rem 0.2rem;
+    color: black;
+    font-size: 1.0em ;
+    font-weight: 400;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    /*font-size: 1.1em ;*/
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:active {
+    color: blue;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+mark {
+    background-color: white;
+}
+
+a mark{
+    color: blue;
+    opacity: 0.5;
+    /* padding: 0.2rem 0.2rem 0.2rem 0.2rem;*/
+}
+
+a mark:hover{
+    color: blue;
+    opacity: 1;
+}
+
+a mark:active{
+    color: blue;
+    opacity: 1;
+}
+
+strong {
+    font-weight:800;
+}
+
+em {
+}
+
+.txt-color{
+    color: blue;
+}
+.slim{
+    font-weight:400;
+}
+
+h1{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.6em ;
+    font-weight: 800;
+    font-size: 2.5em ;
+    color: black;
+}
+
+h2{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.6em ;
+    font-weight: 400;
+    font-size: 1.9em ;
+    color: black;
+}
+
+h3{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.6em ;
+    font-weight: 400;
+    font-size: 1.5em ;
+    color: black;
+    opacity: 0.3;
+}
+
+h4{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.3em ;
+    font-weight: 800;
+    font-size: 1.0em ;
+    color: black;
+}
+
+h5{
+}
+
+h6{
+}
+
+p{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.6em ;
+    font-weight: 400;
+    font-size: 1.0em ;
+    color: black;
+}
+
+/* style P*/
+.resum{
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem;
+    line-height: 1.6em ;
+    font-weight: 400;
+    font-size: 1.0em ;
+    color: black;
+}
+
+/* style P*/
+.contact-txt{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.6em ;
+    font-weight: 400;
+    font-size: 1.0em ;
+    color: blue;
+}
+
+/* style P, sauf interligne*/
+.contact-com{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.3em ;
+    font-weight: 400;
+    font-size: 0.9em ;
+    line-height: ;
+    color: black;
+
+}
+
+/* style P*/
+.circulation{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.6em ;
+    font-weight: 400;
+    font-size: 1.0em ;
+    line-height: ;
+    color: black;
+}
+
+.circu-g{
+    float: left;
+}
+
+.circu-d{
+    float: right;
+}
+
+.context-titre{
+    display: inline;
+    line-height: 1.6em ;
+    color: black;
+    font-weight: 800;
+    font-size: 0.9em;
+    /*line-height: 1.0em;*/
+    /*opacity: 0.5;*/
+
+}
+
+.context-txt{
+    display: inline;
+    line-height: 1.6em ;
+    color: black;
+    font-weight: 400;
+    font-size: 0.9em;
+    /*line-height: 1.0em;*/
+}
+
+
+.citation-txt-on{
+    padding: 3rem 12% 0.4rem 12%;
+    line-height: 1.6em ;
+    font-weight: 800;
+    font-size: 1.6em ;
+    color: blue;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.citation-txt-off{
+    padding: 0rem 12% 3rem 12%;
+    line-height: 1.6em ;
+    font-weight: 800;
+    font-size: 0.9em ;
+    color: blue;
+    opacity: 0.8;
+}
+
+/* style p, sauf couleur*/
+.tools{
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    line-height: 1.6em ;
+    font-weight: 400;
+    font-size: 1.0em ;
+    line-height: ;
+    color: blue;
+    opacity: 0.5;
+}
+
+
+/* style h4 = P strong*/
+.card-titre{
+    line-height: 1.6em ;
+    font-weight: 800;
+    font-size: 1.0em ;
+    color: black;
+}
+
+/* style p*/
+.card-soustitre{
+    line-height: 1.6em ;
+    font-weight: 400;
+    font-size: 0.9em ;
+    color: black;
+
+}
+
+.space-card-item {
+}
+
+.space-card-txt {
+    padding: 1rem 0rem 4rem 0rem;
+}
+
+.space-card-item:hover .card-titre{
+    color: blue;
+}
+
+/* ////////////////// end : my police ////////////////// */
+
+/* ////////////////// start : others ////////////////// /*
+
+/*.upsection{
+    background: rgba(0, 0, 255, 0.1)
+}/*
+
+/* ////////////////// end : others ////////////////// */
+
+
+/* ////////////////// start : section ////////////////// */
+
+/*après H2*/ /*A REVOIR:ici utiliser padding ou margin??*/
+.space-big{
+    padding: 0rem 0rem 1.7rem 0rem;
+}
+
+.space-middle{
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+/*apres H3, apres H4+P, inter photo*/
+.space-little{
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.space-img-trv{
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+.space-section-prelude{
+    padding: 7.5rem 0rem 6rem 0rem;
+}
+
+.space-section-prelude-bis{
+    padding: 7.5rem 0rem 3.5rem 0rem;
+}
+
+.space-section{
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.space-context {
+    padding: 1.5rem 0rem 0rem 0rem;
+}
+
+.contact{
+    border-style: solid;
+    border-top-color: black;
+    border-width: 2px 0px 0px 0px;
+}
+
+
+/* ////////////////// end : section ////////////////// */
+
+
+/* ////////////////// start : my dropdown ////////////////// */
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    padding: 0rem 0rem 0.2rem 0rem; /*pour pas que le content touche les btn fren */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: inline-block;
+    padding: 0rem 1rem 0rem 0rem;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 125px;
+    z-index: 1;
+    padding: 0.8rem 1.1rem 0.2rem 1.1rem;
+    margin: 0rem 0rem 0rem -1.1rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0rem 0rem 0.7rem 0em;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ////////////////// end : mon dropdown ////////////////// */
+
+/* ////////////////// start : rotating text anim ////////////////// */
+
+.etoile{
+    color: blue;
+}
+
+import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.outer{
+  position:relative;
+  margin-top: 300px;
+  margin-left:600px;
+}
+
+.inner{
+  position:absolute;
+  height:49px;
+  line-height:49px;
+  overflow:hidden;
+  display:inline-block;
+}
+.inner span{
+  animation:animate 10s ease infinite;
+  position:relative;
+  color:blue;
+    font-size: 0.9em ;
+   /* font-weight: 400;*/
+}
+
+@keyframes animate{
+  0%,100%{
+    top:0;
+  }
+  20%{
+    top:0px;
+  }
+  25%{
+    top:-50px;
+  }
+  45%{
+    top:-50px;
+  }
+  50%{
+    top:-100px;
+  }
+  70%{
+    top:-100px;
+  }
+  75%{
+    top:-150px;
+  }
+  95%{
+    top:-150px;
+  }
+}
+/* ////////////////// start : rotating text anim ////////////////// */
+
+/* ////////////////// start : accordion  ////////////////// */
+
+input {
+	 position: absolute;
+	 opacity: 0;
+	 z-index: -1;
+}
+
+/* Accordion styles */
+ .tabs {
+	 overflow: hidden;
+}
+
+ .tab {
+	 overflow: hidden;
+}
+
+/* =h4 */
+ .tab-label {
+     display: flex;
+
+    padding: 0rem 0rem 0.4rem 0rem;
+    margin: 0rem;
+    font-weight: 800;
+    font-size: 1.1em ;
+    line-height:;
+    color: black;
+}
+
+ .tab-label:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+ .tab-label:active {
+    color: blue;
+    text-decoration: none;
+}
+
+ .tab-label:after {
+	 content: "\276F";
+	 transition: all 0.1s;
+     margin-left: 0.5rem;
+}
+
+ .tab-content {
+	 max-height: 0;
+	 transition: all 0.1s;
+}
+
+ .tab-close {
+	 display: flex;
+}
+
+ input:checked + .tab-label::after {
+	 transform: rotate(90deg);
+}
+
+ input:checked ~ .tab-content {
+	 max-height: 100vh;
+}
+
+/* ////////////////// end : accordion  ////////////////// */
